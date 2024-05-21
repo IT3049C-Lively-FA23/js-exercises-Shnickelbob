@@ -6,19 +6,27 @@
  * indexoff(arr, 3); should return the index 2
  */
 function indexOf(arr, item) {
-  return ;
+  return arr.indexOf(item);
 }
 
 // Sum: you should be able to sum the items of an array
 // Example: arr = [1,2,3]   =>  6
 function sum(arr) {
-  return ;
+  let sum = 0;
+  for(let i = 0; i<arr.length; i++)
+    sum += arr[i];
+  return sum;
 }
 
 // Filter: Should filter out all instances of a value from an array
 // Example: filtering 2 out of [1,2,3,5,6,2,4,2] should return [1,3,5,6,4]
 function filterOut(arr, item) {
-  return ;
+  let arr2 = [];
+  for(let i =0; i<arr.length; i++){
+    if(arr[i]!=2)
+      arr2.push(arr[i]);
+  }
+  return arr2;
 }
 
 // Append: you should be able to add an item to the end of an array
