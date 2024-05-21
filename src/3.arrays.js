@@ -38,7 +38,7 @@ function append(arr, item) {
 // Truncate: you should be able to remove the last item of an array
 // hint: pop, slice, splice would all work. Pay attention to the return value in the docs
 function truncate(arr) {
-  arr.pop()
+  arr.pop();
   return arr;
 }
 
