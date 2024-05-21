@@ -23,7 +23,7 @@ function sum(arr) {
 function filterOut(arr, item) {
   let arr2 = [];
   for(let i =0; i<arr.length; i++){
-    if(arr[i]!=2)
+    if(arr[i]!=item)
       arr2.push(arr[i]);
   }
   return arr2;
@@ -31,33 +31,38 @@ function filterOut(arr, item) {
 
 // Append: you should be able to add an item to the end of an array
 function append(arr, item) {
-
-  return ;
+  arr.push(item);
+  return arr;
 }
 
 // Truncate: you should be able to remove the last item of an array
 // hint: pop, slice, splice would all work. Pay attention to the return value in the docs
 function truncate(arr) {
-  return ;
+  arr.pop()
+  return arr;
 }
 
 // Concat: you should be able to join together two arrays
 function concat(arr1, arr2) {
-  return ;
+  return arr1.concat(arr2);
 }
 
 // Insert: you should be able to add an item at the specified index of an array
 // hint: use splice and pay attention to the return value
 function insert(arr, item, index) {
-
-  return ;
+  let arr1=[];
+  let arr2=[];
+  arr1 = arr.slice(0,index);
+  arr2 = arr.slice(index);
+  arr1.push(item);
+  return arr1.concat(arr2);
 }
 
 // Square: you should be able to square each number in an array
 // hint: use .map
 // Example: [1,2,4,5] => [1,4,16,25]
 function square(arr) {
-  return ;
+  return arr.map((x) => x*x);
 }
 
 module.exports = {
